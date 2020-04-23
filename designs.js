@@ -26,5 +26,5 @@ function test (){
 };
 
 // Your code goes here!
-document.querySelector('#sizePicker').addEventListener('submit', makeGrid);
+document.querySelector('#sizePicker').addEventListener('submit', test);
 
