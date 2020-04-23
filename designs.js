@@ -26,4 +26,4 @@ function test (){
 };
 
 // Your code goes here!
-document.querySelector('#submission').addEventListener('click', test);
+document.querySelector('#submission').addEventListener('onClick', test);
