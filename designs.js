@@ -7,7 +7,7 @@ const pixelcanvas=document.querySelector('#pixelCanvas');
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
+function makeGrid(event) {
     for (var row=1; row<=gridRow; row++) {
         const newrow = document.createElement ('tr');
         for (var column=1; column<=gridColumn; column++) {
@@ -21,10 +21,10 @@ function makeGrid() {
 };
 
 
-function test (){
+function test (event){
     console.log("test");
 };
 
 // Your code goes here!
-document.querySelector('#sizePicker').addEventListener('submit', test);
+document.querySelector('#sizePicker').addEventListener('submit', test, event.preventDefault());
 
