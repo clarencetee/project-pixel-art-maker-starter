@@ -18,6 +18,6 @@ function makeGrid() {
     let newtable = pixelcanvas.appendChild(pixelgrid);
 
 };
-    l
+
 // Your code goes here!
 document.querySelector('#submission').addEventListener('click', makeGrid);
