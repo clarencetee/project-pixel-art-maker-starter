@@ -9,15 +9,21 @@ const pixelcanvas=document.querySelector('#pixelCanvas');
 
 function makeGrid() {
     for (var row=1; row<=gridRow; row++) {
-        let newrow = document.createElement ('tr');
+        const newrow = document.createElement ('tr');
         for (var column=1; column<=gridColumn; column++) {
-            let newcolumn = document.createElement('td');
-            let pixelgrid= newrow.appendChild(newcolumn);
+            const newcolumn = document.createElement('td');
+            const section= newrow.appendChild(newcolumn);
         }
+        newrow.appendChild(section);
     }
-    let newtable = pixelcanvas.appendChild(pixelgrid);
+    const newtable = pixelcanvas.appendChild(pixelgrid);
 
 };
 
+
+function test (){
+    console.log("test");
+};
+
 // Your code goes here!
-document.querySelector('#submission').addEventListener('click', makeGrid);
+document.querySelector('#submission').addEventListener('click', test);
